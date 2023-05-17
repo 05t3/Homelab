@@ -45,8 +45,7 @@ client_loop: send disconnect: Connection reset by peer
 ```
 
 
-Reboot:
-
+SSH Session will be terminated. SSH Back in using the new static IP. This time, we can modify our hostname to `soc.com` and reboot server for changes to take place.
 
 ```bash
 root@analyst:/home/analyst# cat /etc/hostname
@@ -58,9 +57,6 @@ root@analyst:/home/analyst# reboot
 root@analyst:/home/analyst# Connection to 192.168.1.50 closed by remote host.
 Connection to 192.168.1.50 closed.
 ```
-
-
-Reboot:
 
 
 ## Installing prerequisites
@@ -557,3 +553,6 @@ root@soc:/usr/share/kibana#
 
 ![image](https://github.com/05t3/Homelab/assets/58165365/ef5cc8a2-6f24-462f-80b0-2d1638db5c73)
 
+## Resource Used:
+
+- [Installing Wazuh with Elastic Stack - All-in-one deployment](https://documentation.wazuh.com/current/deployment-options/elastic-stack/all-in-one-deployment/index.html#all-in-one-deployment)
